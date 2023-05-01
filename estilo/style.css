@@ -42,12 +42,14 @@ nav#its{
     margin: 10px;
     text-align: center;
     gap: 22px;
+    
 }
 .cabecalho-menu-intem{
     font-family: 'Sarala', sans-serif;
     color: #395e3b;
     padding: 5px;
     font-size: 16px;
+    transition: ease 0.3s;
 }
 .cabecalho-menu-intem:hover{
     font-family: 'Sarala', sans-serif;
@@ -78,14 +80,14 @@ nav#its{
     font-family:'EB Garamond', serif;
     margin-left: 30px;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 42px;
     color: #4a7e4d;
 }
 .conteudo-principal-escrito-subtitulo{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 15px;
     color: #5a965d;
 }
 .conteudo-principal-butao{
@@ -106,7 +108,7 @@ nav#its{
     transition: ease 0.3s;
 }
 .conteudo-principal-imagem{
-    height: 190px;
+    height: 185px;
     padding-right: 20px;
 }
 .conteudo-secundario{
