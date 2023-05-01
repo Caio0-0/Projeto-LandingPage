@@ -94,17 +94,19 @@ nav#its{
     width: 140px;
     height: 35px;
     border: none;
+    font-family: 'Sarala', sans-serif;
     margin-left: 70px;
     border-radius: 10px;
     box-shadow: 3px 3px 0px #00000038;
 }
 .conteudo-principal-butao:hover{
     background-color: #315332;
+    font-family: 'Sarala', sans-serif;
     cursor: pointer;
     transition: ease 0.3s;
 }
 .conteudo-principal-imagem{
-    height: 200px;
+    height: 190px;
     padding-right: 20px;
 }
 .conteudo-secundario{
