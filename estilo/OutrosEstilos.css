@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+    i#burg{
+        display: none;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+    }
+    nav#its{
+        display: flex;
+        flex-direction: row;
+    }
+    .conteudo-principal-escrito-titulo{
+        font-family:'EB Garamond', serif;
+
+        font-weight: 400;
+        font-size: 56px;
+        color: #4a7e4d;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        font-family: 'Sarala', sans-serif;
+        font-weight: 400;
+        font-size: 23px;
+        color: #5a965d;
+    }
+    .conteudo-principal-imagem{
+        height: 350px;
+    }
+}
