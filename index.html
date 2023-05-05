@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="estilo/OutrosEstilos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body onresize="mudouT()">
+<body>
     <header class="cabecalho">
-        <img src="imagens/62px.png" alt="Imagem do planeta">
-        <i id="burg" class="material-icons" onclick="clicM()">menu</i>
         <nav class="cabecalho-menu" id="its">
-            <a class="cabecalho-menu-intem" href="">Home</a>
-            <a class="cabecalho-menu-intem" href="">About</a>
-            <a class="cabecalho-menu-intem" href="">Testimonials</a>
-            <a class="cabecalho-menu-intem" href="">Contact</a>
+            <div class="logo"><img src="imagens/62px.png" alt="Imagem do planeta"></div>
+            <div class="abrir-menu"><i id="burg" class="material-icons">menu</i></div>
+            <ul class="menu">
+                <li><a class="cabecalho-menu-intem" href="">Home</a></li>
+                <li><a class="cabecalho-menu-intem" href="">About</a></li>
+                <li><a class="cabecalho-menu-intem" href="">Testimonials</a></li>
+                <li><a class="cabecalho-menu-intem" href="">Contact</a></li>
+                <div class="fecha-menu" ><i class="material-icons">close</i></div>
+            </ul>
         </nav>
     </header>
 

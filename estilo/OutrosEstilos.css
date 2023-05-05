@@ -1,31 +1,72 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px){
-    i#burg{
+nav{
+    color: #4e8d52;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Sarala', sans-serif;
+    margin-bottom: 0px;
+}
+nav .abrir-menu{
+    margin: 5px;
+    display: none;
+    cursor: pointer;
+}
+nav .menu{
+    display: flex;
+    list-style: none;
+}
+nav .menu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #397943;
+}
+nav .menu li a:hover{
+    background-color: #4e8d52;
+    color: white;
+    border-radius: 12%;
+
+}
+nav .fecha-menu{
+    display: none;
+    cursor: pointer;
+    
+}
+.logo img{
+    margin-top: 6px;
+    height: 50px;
+}
+@media (max-width:750px) {
+    nav .menu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #203821ad;
+        transition: top 1s ease;
         display: none;
     }
-    .cabecalho{
-        display: flex;
-        flex-direction: row;
+    nav .menu .fecha-menu{
+        display: block;
+        padding-top: 10px;
+        color: #67e477;
+        
     }
-    nav#its{
-        display: flex;
-        flex-direction: row;
+    nav .menu li a{
+        color: #67ec79;
     }
-    .conteudo-principal-escrito-titulo{
-        font-family:'EB Garamond', serif;
-
-        font-weight: 400;
-        font-size: 56px;
-        color: #4a7e4d;
+    nav .abrir-menu{
+        display: block;
     }
-    .conteudo-principal-escrito-subtitulo{
-        font-family: 'Sarala', sans-serif;
-        font-weight: 400;
-        font-size: 23px;
-        color: #5a965d;
-    }
-    .conteudo-principal-imagem{
-        height: 350px;
+    nav .menu li a:hover{
+        background: none;
+        color: white;
     }
 }

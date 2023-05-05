@@ -1,15 +1,14 @@
-function clicM(){
-    if (its.style.display == 'flex'){
-        its.style.display = 'none'
-    }else{
-        its.style.display = 'flex'
-    }
-}
+const menu = document.querySelector('.menu')
+const fecharMenu = document.querySelector('.fecha-menu')
+const abrirMenu = document.querySelector('.abrir-menu')
 
-function mudouT(){
-    if(window.innerWidth >= 768){
-        its.style.display = 'flex'
-    }else{
-        its.style.display = 'none'
-    }
+abrirMenu.addEventListener('click',show)
+fecharMenu.addEventListener("click",fechar)
+
+function show(){
+    menu.style.display = 'flex'
+    menu.style.top = '0'
+}
+function fechar(){
+    menu.style.top ='-100%'
 }
