@@ -10,5 +10,5 @@ function show(){
     menu.style.top = '0'
 }
 function fechar(){
-    menu.style.top ='-100%'
+    menu.style.top ='-120%'
 }
