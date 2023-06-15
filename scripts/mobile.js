@@ -12,3 +12,4 @@ function show(){
 function fechar(){
     menu.style.top ='-120%'
 }
+

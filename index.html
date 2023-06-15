@@ -9,41 +9,64 @@
     <link rel="stylesheet" href="estilo/OutrosEstilos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+    <style>
+        body{
+            height: 100vh;
+            width: 98vw;
+            background-image: url("imagens/fundo.jpg");
+            background-position: top top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+    </style>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho-menu" id="its">
-            <div class="logo"><img src="imagens/62px.png" alt="Imagem do planeta"></div>
-            <div class="abrir-menu"><i id="burg" class="material-icons">menu</i></div>
+    <header class="Cabecalho">
+        <nav class="Cabecalho-menu">
+            <img class="imagem-logo" src="imagens/LOGO-CORTADA.png" alt="logo ficticio">
             <ul class="menu">
-                <li><a class="cabecalho-menu-intem" href="">Home</a></li>
-                <li><a class="cabecalho-menu-intem" href="">About</a></li>
-                <li><a class="cabecalho-menu-intem" href="">Testimonials</a></li>
-                <li><a class="cabecalho-menu-intem" href="">Contact</a></li>
-                <div class="fecha-menu" ><i class="material-icons">close</i></div>
+                <li>Home</li>
+                <li>Destinatario</li>
+                <li>Activities</li>
+                <li>Packages</li>
+                <li>AboutUs</li>
             </ul>
+            <button class="butao-now">Book Now</button>
         </nav>
     </header>
-
-    <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo">Meio Ambiente</h1>
-                <h2 class="conteudo-principal-escrito-subtitulo">Um ambiente limpo é sempre bom!</h2>
-                <button class="conteudo-principal-butao">Sobre</button>
-            </div>
-            <img class="conteudo-principal-imagem" src="imagens/imagem-500px.png" alt="Imagens pensonagens do Resident Evil 4">
-        </section>
-
-        <section class="conteudo-secundario">
-            <h3 class="conteudo-secundario-titulo">O que é Meio Ambinte?</h3>
-            <p class="conteudo-secundario-paragrafo">1.Meio ambiente se refere ao conjunto de elementos naturais, como ar, água, solo, fauna e flora, que interagem e sustentam a vida na Terra.</p>
-            <p class="conteudo-secundario-paragrafo">2. A saúde do meio ambiente é crucial para a sobrevivência e bem-estar das espécies, incluindo a humana. 
-            </p>
-            <p class="conteudo-secundario-paragrafo">3. A preservação e proteção do meio ambiente é fundamental para garantir a sustentabilidade do planeta e a qualidade de vida das gerações presentes e futuras.</p>
+    <main class="Conteudo">  
+        <section class="Conteudo-Escrito">
+            <p id="destaque">Preservar o meio ambiente é construir um futuro sustentável!</p>
+            
+            <p>Preservar o meio ambiente é essencial,
+                Para construir um futuro sustentável.
+                Cuidar da natureza é nossa responsabilidade,
+                Garantir um planeta saudável para a humanidade.</p>
+            
+            <a href="#secundari" class="butao-start" onclick="aparecerCont()">Start Exploring</a>
         </section>
     </main>
-    <script src="mobile.js"></script>
+    <section class="conteudo-secundario" id="secundari">
+        <div class="conteiner">
+            <div class="info1" id="curi">
+                <h2>Proteção da saúde humana: </h2>
+                <p>Cuidar do meio ambiente é fundamental para proteger a saúde humana. Ecossistemas saudáveis fornecem ar limpo, água potável e alimentos seguros, contribuindo para a prevenção de doenças e o bem-estar geral da população.</p>
+            </div>
+            <div class="info2" id="curi">
+                <h2>Preservação da biodiversidade e dos ecossistemas:</h2>
+                <p>Ao cuidar do meio ambiente, preservamos a biodiversidade e os ecossistemas. A biodiversidade é essencial para a manutenção do equilíbrio ecológico, fornecendo serviços ecossistêmicos vitais, como polinização de cultivos, controle de pragas e regulação do clima.</p>
+            </div>
+            <div class="info3" id="curi">
+                <h2>Responsabilidade com as futuras gerações: </h2>
+                <p>Ao cuidar do meio ambiente, estamos assegurando um futuro sustentável para as gerações vindouras. Ao adotar práticas sustentáveis, garantimos que recursos naturais, como água, ar e solo, sejam preservados e disponíveis para as futuras gerações, permitindo-lhes desfrutar de um planeta saudável e habitável.</p>
+            </div>
+        </div>
+        
+    </section>
 
+    <script src="scripts/mobile.js"></script>
+    <script src="scripts/conteudo.js"></script>
 
 </body>
 </html>
