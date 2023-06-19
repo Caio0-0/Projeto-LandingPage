@@ -1,8 +1,14 @@
 let conteudo = document.querySelector(".conteudo-secundario")
-let conteiner = document.querySelector(".conteiner")
 
 function aparecerCont(){
-    conteudo.style.display = "flex"
-    conteiner.style.left = "50%"
+     conteudo.style.display = "flex"
+     for(var i= 1;i<=3;i++){
+          let cori =document.querySelector(`#curi${i}`)  
+          setTimeout(function(){
+               cori.style.left = "0%" 
+          },100)
+     }
+  
+  
     
 }
